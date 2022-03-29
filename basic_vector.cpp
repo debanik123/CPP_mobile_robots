@@ -5,9 +5,11 @@ using namespace std;
 
 int main()
 {
-    vector<int> v = {0,2,5,7,8,10};
-    int k=10;
+    vector<int> v {0,2,5,7,8,10};
+    vector<int>::iterator it;
+    int k=8;
     int sum=0;
+    int size_of_v = v.size();
 
     // vector index and element access
     cout<<"vector index and element access"<<endl;
@@ -55,5 +57,12 @@ int main()
         }
     }
     cout<<"-------------------------------"<<endl;
+
+    // find an element index in a vector
+    cout<<"find an element in a vector"<<endl;
+    it = find(v.begin(),v.end(),k);
+    cout<<"item found->>"<<*it<<"index at-->"<<size_of_v-(v.end()-it)<<endl;
+
+
     return 0;
 }
