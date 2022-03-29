@@ -62,7 +62,13 @@ int main()
     cout<<"find an element in a vector"<<endl;
     it = find(v.begin(),v.end(),k);
     cout<<"item found->>"<<*it<<"index at-->"<<size_of_v-(v.end()-it)<<endl;
+    cout<<"-------------------------------"<<endl;
 
+    // find an element index in a vector with auto
+    cout<<"find an element index in a vector with auto"<<endl;
+    auto it_ = find(v.begin(),v.end(),k);
+    cout<<"item found->>"<<*it<<"index at-->"<<size_of_v-(v.end()-it_)<<endl;
+    cout<<"-------------------------------"<<endl;
 
     return 0;
 }
