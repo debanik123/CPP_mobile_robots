@@ -33,6 +33,14 @@ int main()
     }
     cout<<"-------------------------------"<<endl;
 
+    // Iterating vector elements in the Reverse Direction
+    cout<<"Iterating vector elements in the Reverse Direction"<<endl;
+    for(auto it=v.rbegin(); it !=v.rend(); it++)
+    {
+        cout<<"---->"<<*it<<endl;
+    }
+    cout<<"-------------------------------"<<endl;
+
     // vector element sum and find a specific sum value with condition
     cout<<"vector element sum and find a specific sum value with condition"<<endl;
     for(int i=0; i<v.size();i++)
