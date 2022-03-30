@@ -70,5 +70,168 @@ int main()
     cout<<"item found->>"<<*it<<"index at-->"<<size_of_v-(v.end()-it_)<<endl;
     cout<<"-------------------------------"<<endl;
 
+    
+    vector<int> vec;
+    // append vector elements into vec
+    for(int i=0; i<10; i++)
+    {
+        vec.push_back(i*4);
+    }
+
+    cout << "Output of begin and end: ";
+    for(auto it=vec.begin(); it!=vec.end();it++)
+    {
+        cout<<*it<<" ";
+    }
+    cout<<endl;
+    cout<<"-------------------------------"<<endl;
+
+    cout << "\nOutput of cbegin and cend: ";
+    for(auto it=vec.cbegin(); it!=vec.cend();it++)
+    {
+        cout<<*it<<" ";
+    }
+    cout<<endl;
+    cout<<"-------------------------------"<<endl;
+
+    cout << "\nOutput of rbegin and rend: ";
+    for(auto it=vec.rbegin(); it!=vec.rend();it++)
+    {
+        cout<<*it<<" ";
+    }
+    cout<<endl;
+    cout<<"-------------------------------"<<endl;
+
+    cout << "\nOutput of crbegin and crend : ";
+    for(auto it=vec.crbegin(); it!=vec.crend();it++)
+    {
+        cout<<*it<<" ";
+    }
+    cout<<endl;
+    cout<<"-------------------------------"<<endl;
+
+    cout << "Size : " <<vec.size()<<endl;
+    cout << "\nCapacity : " <<vec.capacity()<<endl;
+    cout << "\nMax_Size : " <<vec.max_size()<<endl;
+
+    vec.resize(6);
+    cout << "resized vec Size : " <<vec.size()<<endl;
+
+    cout << "resized vec Size iter : ";
+    for(auto it=vec.begin(); it!=vec.end();it++)
+    {
+        cout<<*it<<" ";
+    }
+    cout<<endl;
+    cout<<"-------------------------------"<<endl;
+
+    if (vec.empty() == false)
+        cout << "\nVector is not empty"<<endl;
+    else
+        cout << "\nVector is empty"<<endl;
+    
+    // Shrinks the vector
+    vec.shrink_to_fit();
+    cout << "Shrinks vec Size iter : ";
+    for(auto it=vec.begin(); it!=vec.end();it++)
+    {
+        cout<<*it<<" ";
+    }
+    cout<<endl;
+    cout<<"-------------------------------"<<endl;
+
+    cout << "\nReference operator [vec] : vec[2] = " << vec[2]<<endl;
+    cout << "\nat : vec.at(4) = " << vec.at(4)<<endl;
+    cout << "\nfront() : vec.front() = " << vec.front()<<endl;
+    cout << "\nback() : vec.back() = " << vec.back()<<endl;
+
+    // pointer to the first element
+    auto p = vec.data();
+    cout << "\nThe first element memory address is " << p <<endl;
+    cout << "\nThe first element is " << *p <<endl;
+    cout << "\nThe second element is " << *(p+1) <<endl;
+    cout << "\nThe third element is " << *(p+2) <<endl;
+
+    // Modifiers
+    // Assign vector
+    vector<int> vect;
+
+    // fill the array with 20 five times
+    vect.assign(5,20);
+
+    cout << "Output of begin and end: ";
+    for(auto it=vect.begin(); it!=vect.end();it++)
+    {
+        cout<<*it<<" ";
+    }
+    cout<<endl;
+    cout<<"-------------------------------"<<endl;
+
+    int n = vect.size();
+    cout << "\nThe last element is: " << vect[n - 1]<<endl;
+
+    // removes last element
+    vect.pop_back();
+
+    cout << "Output of begin and end: ";
+    for(auto it=vect.begin(); it!=vect.end();it++)
+    {
+        cout<<*it<<" ";
+    }
+    cout<<endl;
+    cout<<"-------------------------------"<<endl;
+
+    // inserts at the beginning
+    vect.insert(vect.begin(), 10);
+    cout << "\nThe first element is: " << vect[0]<<endl;
+
+    // Inserts 20 at the end
+    vect.emplace_back(40);
+    int o = vect.size();
+    cout << "\nThe last element is: " << vect[o - 1]<<endl;
+
+    // erases the vector
+    vect.clear();
+    cout << "\nVector size after erase(): " << vect.size()<<endl;
+
+    // two vector to perform swap
+    vector<int> v1 {4,5,7}, v2 {8,5,9};
+    cout << "\nVector v1 size : " <<v1.size()<<", Vector v2 size : "<<v2.size()<<endl;
+
+    cout << "\n\nVector 1: ";
+    for(auto it=v1.begin(); it!=v1.end();it++)
+    {
+        cout<<*it<<" ";
+    }
+    cout<<endl;
+    cout<<"-------------------------------"<<endl;
+
+    cout << "\nVector 2: ";
+    for(auto it=v2.begin(); it!=v2.end();it++)
+    {
+        cout<<*it<<" ";
+    }
+    cout<<endl;
+    cout<<"-------------------------------"<<endl;
+
+    v1.swap(v2);
+
+    cout << "\nAfter Swap \nVector 1: ";
+    for(auto it=v1.begin(); it!=v1.end();it++)
+    {
+        cout<<*it<<" ";
+    }
+    cout<<endl;
+    cout<<"-------------------------------"<<endl;
+
+    cout << "\nVector 2: ";
+    for(auto it=v2.begin(); it!=v2.end();it++)
+    {
+        cout<<*it<<" ";
+    }
+    cout<<endl;
+    cout<<"-------------------------------"<<endl;
+
+    
     return 0;
 }
