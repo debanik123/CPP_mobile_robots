@@ -232,6 +232,50 @@ int main()
     cout<<endl;
     cout<<"-------------------------------"<<endl;
 
+    // Vector iterators are used to point to the memory address of a vector element. In some ways, they act like pointers in C++.
+    vector<int> l;
+
+    for(int i=0; i<10; i++)
+    {
+        l.push_back(5*i);
+    }
+
+    cout << "\nVector l: ";
+    for(auto it=l.begin(); it!=l.end();it++)
+    {
+        cout<<*it<<" ";
+    }
+    cout<<endl;
+    cout<<"-------------------------------"<<endl;
+
+    vector<int>::iterator ip;
+
+    // iter points to l[0]
+    ip = l.begin();
+    cout<<"iter points to l[0]-->"<<*ip<<endl;
+    cout<<"iter points to l[1]-->"<<*(ip+1)<<endl;
+    cout<<"iter points to l[2]-->"<<*(ip+2)<<endl;
+    cout<<"iter points to l[3]-->"<<*(ip+3)<<endl;
+    cout<<"iter points to l[4]-->"<<*(ip+4)<<endl;
+    ip = l.begin()+5;
+    cout<<"iter points to l[5]-->"<<*ip<<endl;
+    ip = l.begin()+6;
+    cout<<"iter points to l[6]-->"<<*ip<<endl;
+    ip = l.begin()+7;
+    cout<<"iter points to l[7]-->"<<*ip<<endl;
+    ip = l.begin()+8;
+    cout<<"iter points to l[8]-->"<<*ip<<endl;
+
+    // iter points to the last element of num
+    ip = l.end()-1;
+    cout<<"iter points to l[n-1]-->"<<*ip<<endl;
+
+    // use iterator with for loop
+    for(auto it=l.begin(); it!=l.end(); it++)
+    {
+        cout<<*it<<" ";
+    }
+    cout<<endl;
     
     return 0;
 }
