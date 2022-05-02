@@ -82,13 +82,17 @@ public:
     int goal[2] = {0,19};
     int cost = 1;
 
-    string movements_arrows[4] = { "^", "<", "v", ">" };
+    string movements_arrows[8] = {"p", "p", "p", "p", "p", "p", "p", "p"};
 
     vector<vector<int> > movements{
         { -1, 0 },
         { 0, -1 },
         { 1, 0 },
-        { 0, 1 }
+        { 0, 1 },
+        {-1, -1},
+        {-1, 1},
+        {1, -1},
+        {1, 1}
     };
 };
 
