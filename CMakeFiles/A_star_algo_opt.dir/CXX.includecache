@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/debanik/CPP_mobile_robots/src/A_star_algo_opt.cpp
+iostream
+-
+string.h
+-
+vector
+-
+algorithm
+-
+

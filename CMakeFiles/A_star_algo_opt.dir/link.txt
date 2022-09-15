@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/A_star_algo_opt.dir/src/A_star_algo_opt.cpp.o  -o A_star_algo_opt 
