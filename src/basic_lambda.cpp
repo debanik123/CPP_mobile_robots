@@ -83,5 +83,43 @@ int main()
     auto mul_ = [&x](auto y){return x*y;};
     cout<<"mul_(&x, &y)-->"<<mul_(5)<<endl;
 
+    cout <<"lambda_function single augument--->"<<
+    [](int x){return x+2;}(2)<< endl;
+
+    cout <<"lambda_function double auguments--->"<<
+    [](int x, int y){return x+y;}(2, 4)<< endl;
+
+    cout <<"lambda_function tree auguments--->"<<
+    [](int x, int y, int z){return x+y+z;}(2, 4, 2)<< endl;
+
+    cout <<"lambda_function four auguments--->"<<
+    [](int x, int y, int z, int g){return x+y+z+g;}(2, 4, 2, 5)<< endl;
+
+    auto sum_ = [](int x, int y){return x+y;};
+    cout<<"sum of x+y --->"<<sum_(2,6)<<endl;
+
+    auto sum_three = [](int x, int y, int z){return x+y+z;};
+    cout<<"sum of x+y+z --->"<<sum_three(2,6,5)<<endl;
+
+    auto sum_four = [](int x, int y, int z, int g){return x+y+z+g;};
+    cout<<"sum of x+y+z+g --->"<<sum_four(2,6,5,6)<<endl;
+
+    vector<int> v_ {2, 3, 5, 6, 7, 8, 43, 8};
+    vector<int> v_mix {2,-3, 5, 6,-7, 8, 43, -8};
+    auto cond = [](int x){return x > 0;};
+    cout<<"all_of-->"<<all_of(v_.begin(), v_.end(), cond)<<endl;  //all are true
+    cout<<"all_of-->"<<all_of(v_mix.begin(), v_mix.end(), cond)<<endl;
+
+    cout<<"any_of-->"<<any_of(v_.begin(), v_.end(), cond)<<endl;  //any of true
+    cout<<"any_of-->"<<any_of(v_mix.begin(), v_mix.end(), cond)<<endl;
+
+    cout<<"none_of-->"<<none_of(v_.begin(), v_.end(), cond)<<endl;  //none of true
+    cout<<"none_of-->"<<none_of(v_mix.begin(), v_mix.end(), cond)<<endl;
+
+    vector<int> g {4, 2, 6, 8};
+    auto cond_ = [](int x){return x%2==0;};
+    cout<<"all_of-->"<<all_of(g.begin(), g.end(), cond_)<<endl;
+    cout<<"any_of-->"<<any_of(g.begin(), g.end(), cond_)<<endl;
+    cout<<"none_of-->"<<none_of(g.begin(), g.end(), cond_)<<endl;
 
 }
