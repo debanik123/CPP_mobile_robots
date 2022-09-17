@@ -10,10 +10,11 @@ class Basic_class
 {
 public:
     // int find_element(vector<int>& v, int element);
-    float sum_vector_element(vector<float>& v);
+    template<typename dtype>
+    dtype sum_vector_element(vector<dtype>& v);
     // float find_odd(vector<float>& v);
     // float find_even(vector<float>& v);
-    float sum_of_elems = 0;
+    // float sum_of_elems = 0;
 };
 
 #endif

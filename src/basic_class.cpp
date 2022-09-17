@@ -5,19 +5,22 @@
 //     auto find = [element]()
 // }
 
-float Basic_class::sum_vector_element(vector<float>& v)
+template<typename dtype>
+dtype Basic_class::sum_vector_element(vector<dtype>& v)
 {
-    sum_of_elems = accumulate(v.begin(), v.end(), 0.0f);
-    return sum_of_elems;
+    return accumulate(v.begin(), v.end(), 0.0f);
 }
 
 int main()
 {
     Basic_class obj;
 
-    vector<float> v {0.0, 2.1, 5.4 , 7.6, 8.0, 10.8 , 30.9};
+    vector<int> v {0,2,5,7,8,10};
+    cout<<"sum of int vector elements are-->"<<obj.sum_vector_element<int>(v)<<endl;
 
-    cout<<"sum of vector elements are-->"<<obj.sum_vector_element(v)<<endl;
+    vector<float> vec {0.0, 2.1, 5.4 , 7.6, 8.0, 10.8 , 30.9};
+    cout<<"sum of float vector elements are-->"<<obj.sum_vector_element<float>(vec)<<endl;
+
 
     v.clear();
 
