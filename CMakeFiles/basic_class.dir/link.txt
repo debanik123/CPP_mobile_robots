@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/basic_class.dir/src/basic_class.cpp.o  -o basic_class 

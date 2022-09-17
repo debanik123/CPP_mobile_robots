@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named basic_class
+
+# Build rule for target.
+basic_class: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 basic_class
+.PHONY : basic_class
+
+# fast build rule for target.
+basic_class/fast:
+	$(MAKE) -f CMakeFiles/basic_class.dir/build.make CMakeFiles/basic_class.dir/build
+.PHONY : basic_class/fast
+
+#=============================================================================
 # Target rules for targets named basic_lambda
 
 # Build rule for target.
@@ -201,6 +214,33 @@ src/A_star_algo_opt.s: src/A_star_algo_opt.cpp.s
 src/A_star_algo_opt.cpp.s:
 	$(MAKE) -f CMakeFiles/A_star_algo_opt.dir/build.make CMakeFiles/A_star_algo_opt.dir/src/A_star_algo_opt.cpp.s
 .PHONY : src/A_star_algo_opt.cpp.s
+
+src/basic_class.o: src/basic_class.cpp.o
+
+.PHONY : src/basic_class.o
+
+# target to build an object file
+src/basic_class.cpp.o:
+	$(MAKE) -f CMakeFiles/basic_class.dir/build.make CMakeFiles/basic_class.dir/src/basic_class.cpp.o
+.PHONY : src/basic_class.cpp.o
+
+src/basic_class.i: src/basic_class.cpp.i
+
+.PHONY : src/basic_class.i
+
+# target to preprocess a source file
+src/basic_class.cpp.i:
+	$(MAKE) -f CMakeFiles/basic_class.dir/build.make CMakeFiles/basic_class.dir/src/basic_class.cpp.i
+.PHONY : src/basic_class.cpp.i
+
+src/basic_class.s: src/basic_class.cpp.s
+
+.PHONY : src/basic_class.s
+
+# target to generate assembly for a file
+src/basic_class.cpp.s:
+	$(MAKE) -f CMakeFiles/basic_class.dir/build.make CMakeFiles/basic_class.dir/src/basic_class.cpp.s
+.PHONY : src/basic_class.cpp.s
 
 src/basic_lambda.o: src/basic_lambda.cpp.o
 
@@ -317,6 +357,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... basic_class"
 	@echo "... basic_lambda"
 	@echo "... edit_cache"
 	@echo "... A_star_algo_opt"
@@ -326,6 +367,9 @@ help:
 	@echo "... src/A_star_algo_opt.o"
 	@echo "... src/A_star_algo_opt.i"
 	@echo "... src/A_star_algo_opt.s"
+	@echo "... src/basic_class.o"
+	@echo "... src/basic_class.i"
+	@echo "... src/basic_class.s"
 	@echo "... src/basic_lambda.o"
 	@echo "... src/basic_lambda.i"
 	@echo "... src/basic_lambda.s"

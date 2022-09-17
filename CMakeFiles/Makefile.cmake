@@ -45,6 +45,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/basic_class.dir/DependInfo.cmake"
   "CMakeFiles/basic_lambda.dir/DependInfo.cmake"
   "CMakeFiles/A_star_algo_opt.dir/DependInfo.cmake"
   "CMakeFiles/bfs.dir/DependInfo.cmake"

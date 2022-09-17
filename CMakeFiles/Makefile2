@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/debanik/CPP_mobile_robots
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/basic_class.dir/all
 all: CMakeFiles/basic_lambda.dir/all
 all: CMakeFiles/A_star_algo_opt.dir/all
 all: CMakeFiles/bfs.dir/all
@@ -67,6 +68,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/basic_class.dir/clean
 clean: CMakeFiles/basic_lambda.dir/clean
 clean: CMakeFiles/A_star_algo_opt.dir/clean
 clean: CMakeFiles/bfs.dir/clean
@@ -76,13 +78,40 @@ clean: CMakeFiles/basic_vector.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/basic_class.dir
+
+# All Build rule for target.
+CMakeFiles/basic_class.dir/all:
+	$(MAKE) -f CMakeFiles/basic_class.dir/build.make CMakeFiles/basic_class.dir/depend
+	$(MAKE) -f CMakeFiles/basic_class.dir/build.make CMakeFiles/basic_class.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/debanik/CPP_mobile_robots/CMakeFiles --progress-num=3,4 "Built target basic_class"
+.PHONY : CMakeFiles/basic_class.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/basic_class.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/debanik/CPP_mobile_robots/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/basic_class.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/debanik/CPP_mobile_robots/CMakeFiles 0
+.PHONY : CMakeFiles/basic_class.dir/rule
+
+# Convenience name for target.
+basic_class: CMakeFiles/basic_class.dir/rule
+
+.PHONY : basic_class
+
+# clean rule for target.
+CMakeFiles/basic_class.dir/clean:
+	$(MAKE) -f CMakeFiles/basic_class.dir/build.make CMakeFiles/basic_class.dir/clean
+.PHONY : CMakeFiles/basic_class.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/basic_lambda.dir
 
 # All Build rule for target.
 CMakeFiles/basic_lambda.dir/all:
 	$(MAKE) -f CMakeFiles/basic_lambda.dir/build.make CMakeFiles/basic_lambda.dir/depend
 	$(MAKE) -f CMakeFiles/basic_lambda.dir/build.make CMakeFiles/basic_lambda.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/debanik/CPP_mobile_robots/CMakeFiles --progress-num=3,4 "Built target basic_lambda"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/debanik/CPP_mobile_robots/CMakeFiles --progress-num=5,6 "Built target basic_lambda"
 .PHONY : CMakeFiles/basic_lambda.dir/all
 
 # Build rule for subdir invocation for target.
@@ -136,7 +165,7 @@ CMakeFiles/A_star_algo_opt.dir/clean:
 CMakeFiles/bfs.dir/all:
 	$(MAKE) -f CMakeFiles/bfs.dir/build.make CMakeFiles/bfs.dir/depend
 	$(MAKE) -f CMakeFiles/bfs.dir/build.make CMakeFiles/bfs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/debanik/CPP_mobile_robots/CMakeFiles --progress-num=7,8 "Built target bfs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/debanik/CPP_mobile_robots/CMakeFiles --progress-num=9,10 "Built target bfs"
 .PHONY : CMakeFiles/bfs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -163,7 +192,7 @@ CMakeFiles/bfs.dir/clean:
 CMakeFiles/bfs_opt.dir/all:
 	$(MAKE) -f CMakeFiles/bfs_opt.dir/build.make CMakeFiles/bfs_opt.dir/depend
 	$(MAKE) -f CMakeFiles/bfs_opt.dir/build.make CMakeFiles/bfs_opt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/debanik/CPP_mobile_robots/CMakeFiles --progress-num=9,10 "Built target bfs_opt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/debanik/CPP_mobile_robots/CMakeFiles --progress-num=11,12 "Built target bfs_opt"
 .PHONY : CMakeFiles/bfs_opt.dir/all
 
 # Build rule for subdir invocation for target.
@@ -190,7 +219,7 @@ CMakeFiles/bfs_opt.dir/clean:
 CMakeFiles/basic_vector.dir/all:
 	$(MAKE) -f CMakeFiles/basic_vector.dir/build.make CMakeFiles/basic_vector.dir/depend
 	$(MAKE) -f CMakeFiles/basic_vector.dir/build.make CMakeFiles/basic_vector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/debanik/CPP_mobile_robots/CMakeFiles --progress-num=5,6 "Built target basic_vector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/debanik/CPP_mobile_robots/CMakeFiles --progress-num=7,8 "Built target basic_vector"
 .PHONY : CMakeFiles/basic_vector.dir/all
 
 # Build rule for subdir invocation for target.
