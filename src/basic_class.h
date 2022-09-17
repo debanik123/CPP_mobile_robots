@@ -10,10 +10,10 @@ class Basic_class
 {
 public:
     // int find_element(vector<int>& v, int element);
-    int sum_vector_element(vector<int>& v);
-    // int find_odd(vector<int>& v);
-    // int find_even(vector<int>& v);
-    int sum_of_elems = 0;
+    float sum_vector_element(vector<float>& v);
+    // float find_odd(vector<float>& v);
+    // float find_even(vector<float>& v);
+    float sum_of_elems = 0;
 };
 
 #endif
