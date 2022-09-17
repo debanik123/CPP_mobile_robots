@@ -12,8 +12,13 @@ public:
     // int find_element(vector<int>& v, int element);
     template<typename dtype>
     dtype sum_vector_element(vector<dtype>& v);
-    // float find_odd(vector<float>& v);
-    // float find_even(vector<float>& v);
+
+    template<typename dtype>
+    void find_odd(vector<dtype>& v);
+
+    template<typename dtype>
+    void find_even(vector<dtype>& v);
+
     // float sum_of_elems = 0;
 };
 
