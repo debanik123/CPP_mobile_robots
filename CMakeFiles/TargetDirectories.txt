@@ -1,8 +1,0 @@
-/home/debanik/CPP_mobile_robots/CMakeFiles/rebuild_cache.dir
-/home/debanik/CPP_mobile_robots/CMakeFiles/basic_class.dir
-/home/debanik/CPP_mobile_robots/CMakeFiles/basic_lambda.dir
-/home/debanik/CPP_mobile_robots/CMakeFiles/edit_cache.dir
-/home/debanik/CPP_mobile_robots/CMakeFiles/A_star_algo_opt.dir
-/home/debanik/CPP_mobile_robots/CMakeFiles/bfs.dir
-/home/debanik/CPP_mobile_robots/CMakeFiles/bfs_opt.dir
-/home/debanik/CPP_mobile_robots/CMakeFiles/basic_vector.dir
